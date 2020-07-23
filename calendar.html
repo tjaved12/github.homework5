@@ -20,12 +20,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Work Day Scheduler</title>
+
+    
   </head>
 
   <body>
-  <main>
+  <div>
     <div class="container">
 
     <header class="jumbotron">
@@ -40,37 +42,38 @@
        
            
       <div class="row" id = "row">
-        <div class="col col-sm-2">
+        <div class="col-sm-1-md-1-lg-1">
          <span>9 AM</span>
         </div>
-                <div class="col-sm-auto">
-          <textarea name="plan" id="dayPlan" cols="60" rows="1"></textarea>
+                <div class="col-sm-7">
+          <textarea name="plan" id="dayPlan" cols="auto" rows="1"></textarea>
         </div>
-        <div class="col col-sm-1">
+        <div class="col-sm-1">
             <button id="saveBtn">Save</button>
         </div>
       </div>
       <div class="row" id ="row">
-        <div class="col col-sm-2">
+        <div class="col-sm-1-md-1-lg-1">
          <span>10 AM</span>
         </div>
-                <div class="col-sm-auto">
-          <textarea name="plan" id="dayPlan" cols="60" rows="1"></textarea>
+                <div class="col-sm-7">
+          <textarea name="plan" id="dayPlan" cols="auto" rows="1"></textarea>
         </div>
-        <div class="col col-sm-1">
+        <div class="col-sm-1">
             <button id="saveBtn">Save</button>
         </div>
       </div>
     </div>
+ 
     </main>
      
         
 
        
        
- 
-<script src="calendar.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="calendar.js"></script>
+  
   </body>
 </html>

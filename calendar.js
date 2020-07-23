@@ -1,7 +1,8 @@
-var currentDay=document.getElementById("currentDay");
-var saveBtn =document.getElementById("saveBtn")
+var currentDay = document.getElementById("currentDay");
+var saveBtn = document.getElementById("saveBtn")
+var planed = document.getElementById("dayplan")
 
-  function currentDay(){
+  function today(){
 
       var today= moment();
       console.log(today);
@@ -9,7 +10,11 @@ var saveBtn =document.getElementById("saveBtn")
 
   }
 
+  today();
   saveBtn.addEventListener("click",function(){
-    
-
+    console.log('open')
+    localStorage.setItem("activity",planed.value);
+    var savedActivity= localStorage.getItem("activity").string;
+    planed.append(savedActivity)
+console.log(activity);
   })
