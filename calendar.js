@@ -152,7 +152,7 @@ planed6.append(act6);
 var act7= localStorage.getItem("activity7");
 console.log(act7);
 if(act7!==null){
-  planed1.innerHTML="Enter your Appointments";
+  planed1.innerHTML=" ";
 planed7.append(act7);
 }
 var act8= localStorage.getItem("activity8");
