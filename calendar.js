@@ -115,45 +115,68 @@ timeDiff()
   
 var act1= localStorage.getItem("activity1");
 console.log(act1);
+if(act1!==null){
+planed1.innerHTML="Enter your Appointments";
 planed1.append(act1)
-
+}
 var act2= localStorage.getItem("activity2");
 console.log(act2);
+if(act2!==null){
+  planed2.innerHTML="Enter your Appointments";
 planed2.append(act2);
-
+}
 var act3= localStorage.getItem("activity3");
 console.log(act3);
+if(act3!==null){
+  planed3.innerHTML="Enter your Appointments";
 planed3.append(act3);
-
+}
 var act4= localStorage.getItem("activity4");
 console.log(act4);
+if(act4!==null){
+  planed4.innerHTML="Enter your Appointments";
 planed4.append(act4);
-
+}
 var act5= localStorage.getItem("activity5");
 console.log(act5);
+if(act1!==null){
+  planed5.innerHTML="Enter your Appointments";
 planed5.append(act5);
-
+}
 var act6= localStorage.getItem("activity6");
 console.log(act6);
+if(act6!==null){
+  planed6.innerHTML="Enter your Appointments";
 planed6.append(act6);
-
+}
 var act7= localStorage.getItem("activity7");
 console.log(act7);
+if(act7!==null){
+  planed1.innerHTML="Enter your Appointments";
 planed7.append(act7);
-
+}
 var act8= localStorage.getItem("activity8");
 console.log(act8);
+if(act8!==null){
+  planed1.innerHTML="Enter your Appointments";
 planed8.append(act8);
-
+}
 var act9= localStorage.getItem("activity9");
 console.log(act9);
+if(act9!==null){
+  planed1.innerHTML="Enter your Appointments";
 planed9.append(act9);
-
+}
 var act10= localStorage.getItem("activity10");
 console.log(act10);
+if(act10!==null){
+  planed1.innerHTML="Enter your Appointments";
 planed10.append(act10);
-
+}
 var act11= localStorage.getItem("activity10");
 console.log(act11);
+if(act11!==null){
+  planed1.innerHTML="Enter your Appointments";
 planed11.append(act11)
 
+}
