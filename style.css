@@ -38,18 +38,12 @@ textarea {
   height: 50px;
 }
 .row >div{
-  text-align:  center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+ 
+  margin-right: 0px;
 }
 
-  .col-lg-2{
-      padding-top: 15px;
-  }
-.col-md-auto{
-  padding-top: 7px;
 
-}
 
 #hour {
   background-color: #ffffff;
@@ -73,10 +67,10 @@ textarea {
   color: white;
 }
 
-#saveBtn {
-    position:fixed;
-    margin-left: 0em;
-  border-left: 1px solid black;
+.saveBtn {
+ position:relative;
+  margin-right: 0px;
+   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
@@ -89,10 +83,13 @@ textarea {
 
 #saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .row justify-content-md-center{
     border:1px solid black;
 }
 
+span {
+  margin-top: 8px;
+} 
