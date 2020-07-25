@@ -10,7 +10,7 @@ var planed8= document.getElementById("dayPlan8");
 var planed9= document.getElementById("dayPlan9");
 var planed10= document.getElementById("dayPlan10");
 var planed11= document.getElementById("dayPlan11");
-var timedT = document.getElementById('time1').setAttribute('data-value',09);
+var timedT = document.getElementById('time1')
 var now = moment();
 
 
