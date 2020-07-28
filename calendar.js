@@ -42,21 +42,17 @@ bleep.play();}
 
 //function to display row background-colors based on time of the day
 
-
-
-
-
   function timeRow1() {
     timed1 = parseInt(9);
 console.log(timed1);
  if (currentM === timed1){
-document.getElementById("row1").style.backgroundColor = "#ff6961";
+$("#row1").css("background-color", "#ff6961");
 }
 else if (currentM < timed1){
-document.getElementById("row1").style.backgroundColor = "#77dd77";
+$("#row1").css("background-color", "#77dd77");
 }
 else{
-document.getElementById("row1").style.backgroundColor = "#d6d4d4";
+$("#row1").css("background-color", "#d6d4d4");
 }}
 
 timeRow1()
@@ -65,17 +61,16 @@ function timeRow2() {
  timed2 = parseInt(10);
 console.log(timed2);
  if (currentM === timed2){
-document.getElementById("row2").style.backgroundColor = "#ff6961";
+$("#row2").css("background-color", "#ff6961");
 }
 else if (currentM < timed2){
-document.getElementById("row2").style.backgroundColor = "#77dd77";
+$("#row2").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row2").style.backgroundColor = "#d6d4d4";
+$("#row2").css("background-color", "#d6d4d4");
 }}   
-
 
 timeRow2()
 
@@ -83,35 +78,28 @@ function timeRow3() {
 timed3 = parseInt(11);
 console.log(timed3);
 if (currentM === timed3){
-document.getElementById("row3").style.backgroundColor = "#ff6961";
+$("#row3").css("background-color", "#ff6961");
 }
 else if (currentM < timed3){
-document.getElementById("row3").style.backgroundColor = "#77dd77";
-
+$("#row3").css("background-color", "#77dd77");
 }
 else{
-
-document.getElementById("row3").style.backgroundColor = "#d6d4d4";
-}
-
-}
+$("#row3").css("background-color", "#d6d4d4");
+}}
 
 timeRow3()
 
 function timeRow4() {
-
 timed4 = parseInt(12);
 console.log(timed4);
 if (currentM === timed4){
-document.getElementById("row4").style.backgroundColor = "#ff6961";
+$("#row4").css("background-color", "#ff6961");
 }
 else if (currentM < timed4){
-document.getElementById("row4").style.backgroundColor = "#77dd77";
-
+$("#row4").css("background-color", "#77dd77");
 }
 else{
-
-document.getElementById("row4").style.backgroundColor = "#d6d4d4";
+$("#row4").css("background-color", "#d6d4d4");
 }} 
 
 
@@ -121,15 +109,15 @@ function timeRow5() {
 timed5 = parseInt(13);
 console.log(timed5);
 if (currentM === timed5){
-document.getElementById("row5").style.backgroundColor = "#ff6961";
+$("#row5").css("background-color", "#ff6961");
 }
 else if (currentM < timed5){
-document.getElementById("row5").style.backgroundColor = "#77dd77";
+$("#row5").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row5").style.backgroundColor = "#d6d4d4";
+$("#row5").css("background-color", "#d6d4d4");
 }}
 
 
@@ -140,15 +128,14 @@ function timeRow6() {
 timed6 = parseInt(14);
 console.log(timed6);
 if (currentM === timed6){
-document.getElementById("row6").style.backgroundColor = "#ff6961";
+$("#row6").css("background-color", "#ff6961");
 }
 else if (currentM < timed6){
-document.getElementById("row6").style.backgroundColor = "#77dd77";
-
+$("#row6").css("background-color", "#77dd77");
 }
 else{
 
-document.getElementById("row6").style.backgroundColor = "#d6d4d4";
+$("#row6").css("background-color", "#d6d4d4");
 }}
 
 timeRow6()
@@ -157,15 +144,15 @@ function timeRow7() {
 timed7 = parseInt(15);
 console.log(timed7);
 if (currentM === timed7){
-document.getElementById("row7").style.backgroundColor = "#ff6961";
+$("#row7").css("background-color", "#ff6961");
 }
 else if (currentM < timed7){
-document.getElementById("row7").style.backgroundColor = "#77dd77";
+$("#row7").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row7").style.backgroundColor = "#d6d4d4";
+$("#row7").css("background-color", "#d6d4d4");
 }
 
 }
@@ -176,33 +163,33 @@ function timeRow8() {
 timed8 = parseInt(16);
 console.log(timed8);
 if (currentM === timed8){
-document.getElementById("row8").style.backgroundColor = "#ff6961";
+$("#row8").css("background-color", "#ff6961");
 }
 else if (currentM < timed8){
-document.getElementById("row8").style.backgroundColor = "#77dd77";
+$("#row8").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row8").style.backgroundColor = "#d6d4d4";
-}
+$("#row8").css("background-color", "#d6d4d4");
+}}
 
-}
+
 
 timeRow8()
 function timeRow9() {
 timed9 = parseInt(17);
 console.log(timed9);
 if (currentM === timed9){
-document.getElementById("row9").style.backgroundColor = "#ff6961";
+$("#row9").css("background-color", "#ff6961");
 }
 else if (currentM < timed9){
-document.getElementById("row9").style.backgroundColor = "#77dd77";
+$("#row9").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row9").style.backgroundColor = "#d6d4d4";
+$("#row9").css("background-color", "#d6d4d4");
 }}
 
 
@@ -213,15 +200,15 @@ function timeRow10() {
 timed10 = parseInt(18);
 console.log(timed10);
 if (currentM === timed10){
-document.getElementById("row10").style.backgroundColor = "#ff6961";
+$("#row10").css("background-color", "#ff6961");
 }
 else if (currentM < timed10){
-document.getElementById("row10").style.backgroundColor = "#77dd77";
+$("#row10").css("background-color",  "#77dd77");
 
 }
 else{
 
-document.getElementById("row10").style.backgroundColor = "#d6d4d4";
+$("#row10").css("background-color", "#d6d4d4");
 }}
 
 
@@ -231,18 +218,17 @@ function timeRow11() {
 timed11 = parseInt(19);
 console.log(timed11);
 if (currentM === timed11){
-document.getElementById("row11").style.backgroundColor = "#ff6961";
+$("#row11").css("background-color", "#ff6961");
 }
 else if (currentM < timed11){
-document.getElementById("row11").style.backgroundColor = "#77dd77";
+$("#row11").css("background-color", "#77dd77");
 
 }
 else{
 
-document.getElementById("row11").style.backgroundColor = "#d6d4d4";
-}
+$("#row11").css("background-color", "#d6d4d4");
+}}
 
-}
 
 timeRow11()
     
