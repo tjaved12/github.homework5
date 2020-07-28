@@ -2,8 +2,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color:rgb(211, 232, 247) ;
 }
 
+.container{
+  margin : 20px auto;
+  background-color: white;
+  height: 650px;
+  width : 700px;
+  border-radius: 5px;
+  position: relative;
+}
 textarea {
   background: transparent;
   border: none;
@@ -13,15 +22,16 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
+.header h1  {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 2px solid black;
+  font-size: 60px;
+  font-weight: bolder;
   
-}
-p{
+}p{
+  text-align: center;
   font-weight: bolder;
 }
 
@@ -44,8 +54,6 @@ li{
  margin-bottom: 3px;
  margin-top: 3px;
 }
-
-
 
 .saveBtn {
  position:relative;
