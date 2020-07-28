@@ -1,3 +1,4 @@
+//Assigning values to variables
 var currentDay = document.getElementById("currentDay");
 var planed1= document.getElementById("dayPlan1");
 var planed2= document.getElementById("dayPlan2");
@@ -21,81 +22,95 @@ var timed8 = document.getElementById('time8')
 var timed9 = document.getElementById('time9')
 var timed10 = document.getElementById('time10')
 var timed11= document.getElementById('time11')
-// Moment.js use for Date function
+
+// Moment.js used for Date function
 var now = moment();
 var date= now.format("MM/DD/YYYY");
 var time = now.format("HH:mm");
+//Date and time displayed
 currentDay.append(date);
 currentTime.append(time)
+//Date and Time formatted to compare with row value
 var current = now.format("H");
 currentM = parseInt(current);
- console.log(currentM);
+console.log(currentM);
+//adding audio
+var bleep= new Audio();
+bleep.src="bleep-sound.mp3";
+function loadContent(){
+bleep.play();}
+
+//function to display row background-colors based on time of the day
+
+
+
+
 
   function timeRow1() {
-         timed1 = parseInt(9);
-    console.log(timed1);
-      if (currentM === timed1){
-    document.getElementById("row1").style.backgroundColor = "white";
-  }
- else if (currentM < timed1){
-  document.getElementById("row1").style.backgroundColor = "red";
- }
-  else{
-     document.getElementById("row1").style.backgroundColor = "#d6d4d4";
-  }}
-    
-  timeRow1()
-  
-  function timeRow2() {
-      timed2 = parseInt(10);
-    console.log(timed2);
-      if (currentM === timed2){
-    document.getElementById("row2").style.backgroundColor = "white";
-  }
- else if (currentM < timed2){
-  document.getElementById("row2").style.backgroundColor = "red";
-
- }
-  else{
-   
-  document.getElementById("row2").style.backgroundColor = "#d6d4d4";
-  }}   
-  
-  
-timeRow2()
-
-function timeRow3() {
-  timed3 = parseInt(11);
-  console.log(timed3);
-    if (currentM === timed3){
-  document.getElementById("row3").style.backgroundColor = "white";
+    timed1 = parseInt(9);
+console.log(timed1);
+ if (currentM === timed1){
+document.getElementById("row1").style.backgroundColor = "#ff6961";
 }
-else if (currentM < timed3){
-document.getElementById("row3").style.backgroundColor = "red";
+else if (currentM < timed1){
+document.getElementById("row1").style.backgroundColor = "#77dd77";
+}
+else{
+document.getElementById("row1").style.backgroundColor = "#d6d4d4";
+}}
+
+timeRow1()
+
+function timeRow2() {
+ timed2 = parseInt(10);
+console.log(timed2);
+ if (currentM === timed2){
+document.getElementById("row2").style.backgroundColor = "#ff6961";
+}
+else if (currentM < timed2){
+document.getElementById("row2").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
+document.getElementById("row2").style.backgroundColor = "#d6d4d4";
+}}   
+
+
+timeRow2()
+
+function timeRow3() {
+timed3 = parseInt(11);
+console.log(timed3);
+if (currentM === timed3){
+document.getElementById("row3").style.backgroundColor = "#ff6961";
+}
+else if (currentM < timed3){
+document.getElementById("row3").style.backgroundColor = "#77dd77";
+
+}
+else{
+
 document.getElementById("row3").style.backgroundColor = "#d6d4d4";
 }
-  
+
 }
 
 timeRow3()
 
 function timeRow4() {
- 
-  timed4 = parseInt(12);
-  console.log(timed4);
-    if (currentM === timed4){
-  document.getElementById("row4").style.backgroundColor = "white";
+
+timed4 = parseInt(12);
+console.log(timed4);
+if (currentM === timed4){
+document.getElementById("row4").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed4){
-document.getElementById("row4").style.backgroundColor = "red";
+document.getElementById("row4").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row4").style.backgroundColor = "#d6d4d4";
 }} 
 
@@ -103,204 +118,208 @@ document.getElementById("row4").style.backgroundColor = "#d6d4d4";
 timeRow4()
 
 function timeRow5() {
-  timed5 = parseInt(13);
-  console.log(timed5);
-    if (currentM === timed5){
-  document.getElementById("row5").style.backgroundColor = "white";
+timed5 = parseInt(13);
+console.log(timed5);
+if (currentM === timed5){
+document.getElementById("row5").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed5){
-document.getElementById("row5").style.backgroundColor = "red";
+document.getElementById("row5").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row5").style.backgroundColor = "#d6d4d4";
 }}
-  
+
 
 timeRow5()
 
 function timeRow6() {
- 
-  timed6 = parseInt(14);
-  console.log(timed6);
-    if (currentM === timed6){
-  document.getElementById("row6").style.backgroundColor = "white";
+
+timed6 = parseInt(14);
+console.log(timed6);
+if (currentM === timed6){
+document.getElementById("row6").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed6){
-document.getElementById("row6").style.backgroundColor = "red";
+document.getElementById("row6").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row6").style.backgroundColor = "#d6d4d4";
 }}
 
 timeRow6()
 function timeRow7() {
- 
-  timed7 = parseInt(15);
-  console.log(timed7);
-    if (currentM === timed7){
-  document.getElementById("row7").style.backgroundColor = "white";
+
+timed7 = parseInt(15);
+console.log(timed7);
+if (currentM === timed7){
+document.getElementById("row7").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed7){
-document.getElementById("row7").style.backgroundColor = "red";
+document.getElementById("row7").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row7").style.backgroundColor = "#d6d4d4";
 }
-  
+
 }
 
 timeRow7()
 function timeRow8() {
 
-  timed8 = parseInt(16);
-  console.log(timed8);
-    if (currentM === timed8){
-  document.getElementById("row8").style.backgroundColor = "white";
+timed8 = parseInt(16);
+console.log(timed8);
+if (currentM === timed8){
+document.getElementById("row8").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed8){
-document.getElementById("row8").style.backgroundColor = "red";
+document.getElementById("row8").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row8").style.backgroundColor = "#d6d4d4";
 }
-  
+
 }
 
 timeRow8()
 function timeRow9() {
-  timed9 = parseInt(17);
-  console.log(timed9);
-    if (currentM === timed9){
-  document.getElementById("row9").style.backgroundColor = "white";
+timed9 = parseInt(17);
+console.log(timed9);
+if (currentM === timed9){
+document.getElementById("row9").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed9){
-document.getElementById("row9").style.backgroundColor = "red";
+document.getElementById("row9").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row9").style.backgroundColor = "#d6d4d4";
 }}
-  
+
 
 
 timeRow9()
 function timeRow10() {
-  
-  timed10 = parseInt(18);
-  console.log(timed10);
-    if (currentM === timed10){
-  document.getElementById("row10").style.backgroundColor = "white";
+
+timed10 = parseInt(18);
+console.log(timed10);
+if (currentM === timed10){
+document.getElementById("row10").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed10){
-document.getElementById("row10").style.backgroundColor = "red";
+document.getElementById("row10").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row10").style.backgroundColor = "#d6d4d4";
 }}
- 
+
 
 timeRow10()
 function timeRow11() {
- 
-  timed11 = parseInt(19);
-  console.log(timed11);
-    if (currentM === timed11){
-  document.getElementById("row11").style.backgroundColor = "white";
+
+timed11 = parseInt(19);
+console.log(timed11);
+if (currentM === timed11){
+document.getElementById("row11").style.backgroundColor = "#ff6961";
 }
 else if (currentM < timed11){
-document.getElementById("row11").style.backgroundColor = "red";
+document.getElementById("row11").style.backgroundColor = "#77dd77";
 
 }
 else{
- 
+
 document.getElementById("row11").style.backgroundColor = "#d6d4d4";
 }
-  
+
 }
 
 timeRow11()
+    
+ 
 
-
-
+//save button click function save teh value in local storage. Each row has its own save button, saving the value in unique key.
   $("#saveBtn1").on("click",function(){
     console.log("open");
+    bleep.play();
     localStorage.setItem("activity1", planed1.value);
   })
 
   
   $("#saveBtn2").on("click",function(){
     console.log("open");
-     localStorage.setItem("activity2", planed2.value);
+    bleep.play();    
+    localStorage.setItem("activity2", planed2.value);
      
    
   })
   $("#saveBtn3").on("click",function(){
     console.log("open");
-     localStorage.setItem("activity3", planed3.value);
+    bleep.play();
+    localStorage.setItem("activity3", planed3.value);
      
    
   })
   $("#saveBtn4").on("click",function(){
     console.log("open");
-     localStorage.setItem("activity4", planed4.value);
-     
-   
+    bleep.play();
+       calStorage.setItem("activity4", planed4.value);
+        
   })
   $("#saveBtn5").on("click",function(){
     console.log("open");
-     localStorage.setItem("activity5", planed5.value);
+    bleep.play();
+       localStorage.setItem("activity5", planed5.value);
      
-   
-  })
+     })
   $("#saveBtn6").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity6", planed6.value);
-     
-   
+        
   })
   $("#saveBtn7").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity7", planed7.value);
-     
-   
-  })
+          })
+
   $("#saveBtn8").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity8", planed8.value);
      
-   
-  })
+     })
   $("#saveBtn9").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity9", planed9.value);
-     
-   
+        
   })
   $("#saveBtn10").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity10", planed10.value);
      
-   
-  })
+     })
   
   $("#saveBtn11").on("click",function(){
     console.log("open");
+    bleep.play();
      localStorage.setItem("activity11", planed11.value);
-     
-   
+       
   })
-  
+  //getting the saved values and displaying them in correct row
   var act1= localStorage.getItem("activity1");
   console.log(act1);
   if(act1!==null){
