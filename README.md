@@ -4,7 +4,7 @@
 About The Project:
 The App should be able to rcord and save the user input in the planner, which is spaced for one hr for every regular office hrs.
 
-User Stories
+User Stories:
 As a User:
 I want to see the Day Planner with the ability to add my appointments
 so that I can plan my day accordingly
